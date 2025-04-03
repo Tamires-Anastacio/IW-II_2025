@@ -10,6 +10,9 @@
     <script>
         let nota = prompt ("Digite a sua nota:");
 
+        
+        if (nota >= 0 && nota <= 10) {
+
         if (nota >= 7 ){
             alert ("Parabéns, você foi aprovado(a) :D");
 
@@ -21,7 +24,16 @@
         
         }else{
             alert("Por favor, digite uma nota válida");
+        
         }
+        
+        }else{
+            alert ("Digite uma nota de 0 a 10");
+        }
+       
+
+        
+    
 
     </script>
 </body>
