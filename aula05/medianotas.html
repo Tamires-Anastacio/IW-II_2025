@@ -9,17 +9,15 @@
     <script>
         function exibirMenu() {
             return prompt(
-            "===== MENU INTERATIVO =====\n" +
-            "1 - Ver mensagem" +
-            "2 - Calcular a média da nota" +
-            "3 - Sair" +
-            "Escolha uma opção:"
+                "===== MENU INTERATIVO =====\n" +
+                "1 - Ver mensagem" +
+                "2 - Calcular a média da nota" +
+                "3 - Sair" +
+                 "Escolha uma opção:"
             );
         }
 
        
-            
-
         function executarOpcao(opcao) {
             switch (opcao) {
             case "1":
@@ -28,13 +26,28 @@
             case "2":
                 let nota1 = parseFloat(prompt("Digite a primeira nota:"));
                 let nota2 = parseFloat(prompt("Digite a segunda nota:"));
-                let media = (nota1 + nota2) / 2;
-                let resultado;
-            if (isNaN(nota1) || isNaN(nota2)) {
-                alert("Erro: Você deve digitar números válidos.");
-            } else {
-                alert(`A soma é: ${num1 + num2}`);
+        
+                if (isNaN(nota1) || isNaN(nota2)) {
+                    alert("Erro: Você deve digitar números válidos.");
+                } else {
+                    let media = (nota1 + nota2) / 2;
+                    let mensagem;
+
+                    if (media >= 7) {
+                        alert= ("Parabéns, voce foi aprovado(a) :)");
+
+                    } else if (media >= 5 && media <= 6.9) {
+                        alert = ("Voce ficou de recuperação :|");
+                    
+                    } else if (media < 5) {
+                        alert = ("Voce ficou de recuperação :|");
+
+                    } else {
+                        alert= ("Voce foi reprovado(a) :(");
                     }
+
+                    alert(`Média: ${media.toFixed(2)}\nResultado: ${mensagem}`);
+                }
                 break;
             case "3":
                 alert("Saindo... Até mais!");
