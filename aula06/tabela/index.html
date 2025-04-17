@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+    <script>
+        let num = (prompt("Digite um número para a tabuada dele ser gerada:"))
+
+        if (isNaN(num)) {
+            alert("Por favor, insira um número válido.");
+            
+        } else {
+            let resultado = `Tabuada do ${num}:\n`;
+       
+        for (let i = 1; i <= 10; i++) {
+            resultado += `${num} x ${i} = ${num * i}\n`;
+        }
+
+        alert (resultado);
+        }
+        
+    </script>
+</body>
+</html>
