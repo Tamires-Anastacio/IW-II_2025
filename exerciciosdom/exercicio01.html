@@ -18,14 +18,5 @@
 
   <button onclick="mostrarHora()">Mostrar Hora Atual</button>
   <p id="hora"></p>
-
-  <script>
-    function mostrarHora() {
-      const agora = new Date();
-      const horaFormatada = agora.toLocaleTimeString(); // formato local, ex: 14:35:12
-      document.getElementById("hora").textContent = `Hora atual: ${horaFormatada}`;
-    }
-  </script>
-
 </body>
 </html>

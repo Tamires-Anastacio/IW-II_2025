@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload e Pré-visualização de Imagem</title>
+  <style>
+    #preview {
+      margin-top: 20px;
+      max-width: 300px;
+      max-height: 300px;
+      border: 1px solid #ccc;
+      display: none;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="upload">Selecione uma imagem:</label><br>
+  <input type="file" id="upload" accept="image/*"><br>
+
+  <img id="preview" alt="Pré-visualização da imagem" />
+
+</body>
+</html>

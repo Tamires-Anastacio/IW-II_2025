@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Expandir/Encolher Parágrafo</title>
+  <style>
+    #paragrafo {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      background-color: #f0f0f0;
+      padding: 0 10px;
+    }
+
+    #paragrafo.aberto {
+      max-height: 200px; /* altura suficiente para o conteúdo */
+      padding: 10px;
+    }
+
+    button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="toggle-button">Mostrar</button>
+  <div id="paragrafo">
+    <p>
+      Este é um parágrafo que pode ser expandido ou encolhido com uma transição suave usando JavaScript e CSS.
+    </p>
+  </div>
+
+</body>
+</html>

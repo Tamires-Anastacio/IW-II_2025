@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão Curtir</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #like-button {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: gray;
+      transition: color 0.3s ease;
+    }
+
+    #like-button.liked {
+      color: red;
+    }
+
+    #like-count {
+      font-size: 1.5rem;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="like-button">❤️</button>
+  <span id="like-count">0</span>
+
+</body>
+</html>
